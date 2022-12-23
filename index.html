@@ -1,0 +1,153 @@
+<!Doctype html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width,
+	initial-scale=1.0">
+	<title>1st Web-Page</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+	<nav>
+		<a href="index.html"><img src="logo.png"></a>
+		<div class="nav-links" id="navLinks">
+		<i class="fa fa-minus" onclick="hidemenu()"></i>
+		<ul>
+		<li><a href="#">home</a></li>		
+		<li><a href="course.html">course</a></li>
+	<!---	<li><a href="#">facilities</a></li>	---->
+		<li><a href="blog.html">blog</a></li>
+		<li><a href="about.html">about us</a></li>	
+		<li><a href="contact.html">contact us</a></li>	
+		</ul>
+		</div>
+	<i class="fa fa-bars" onclick="showmenu()"></i>
+	</nav>
+	<div class="text-box">
+	<h1>Choice of New Generation</h1>
+	<p>Make your <b>dreams</b> come true,<br><br> join us in our journey. 
+	</p>
+	<a href="" class="btn">Know More</a>
+	</div>
+	</header>
+
+<!-----------------Course--------->
+
+<section class ="Course">
+	<h1>Courses we offer</h1>
+
+	<div class="row">
+		<div class="course-col">
+		<h3>Primary</h3>
+		<p>Cooperative Efforts<br>Personal mentoring<br>Swimming Classes</p>
+		</div>
+		
+		<div class="course-col">
+		<h3>Middle School</h3>
+		<p>
+		Socialization<br>Self Defense class<br>Smart Classroom</p>
+		</div>
+
+		<div class="course-col">
+		<h3>Higher Secondary</h3>
+		<p>Student Internship<br>Cricket Training<br>Cyber security
+		<br>Web Development</li>
+		</p>
+		</div>
+	</div>
+	<div class="row1">
+	<div class="course-col">
+		<h3>Industrial Training</h3>
+		<p>Student Internship<br> 
+		Industrial Visit<br>
+		Technical Skills</p>
+		</div>
+	<div class="course-col">
+		<h3>Diploma Courses</h3>
+		<p>Industrial Visit<br>
+		Technical Skills<br>
+		Certificate</p>
+		</div>
+	</div>
+	
+</section>
+
+<!----------------------Campus-------->
+
+<section class="campus">
+	<h1>Our Multiple Campus</h1>
+	<h6>Click on image in small screen.</h6>
+	<div class="row">
+	
+		<div class="campus-col">
+		<img src="pic.jpg">
+		<div class="layer">
+		<h3>Pune</h3></div>
+		</div>
+		
+		<div class="campus-col">
+		<img src="Schl.jpg">
+		<div class="layer">
+		<h3>Mumbai</h3></div>
+		</div>
+
+	</div>
+	
+</section>
+
+<!-------------------------Facilities------------>
+<section class="facilities">
+	<h1>Facilities We Provide</h1>
+	<div class="row">
+	<div class="facilities-col">
+	<img src="Lib.jpg">
+	<div class="layer">
+	<h3>Prestigious </h3><h3>Library</h3></div>
+	</div>
+
+	<div class="facilities-col">
+	<img src="ground.jpg">
+	<div class="layer">
+	<h3>Playground</h3></div>
+	</div>
+
+	<div class="facilities-col">
+	<img src="pool.jpg">
+	<div class="layer">
+	<h3>Semi Olympic</h3><h3>Swimming Pool</h3></div>
+	</div>
+	</div>
+</section>
+	
+<!--------------------call to action-------------->
+<section class="cta">
+	<h1>Enroll for our various courses</h1>
+	<a href="" class="btn">Contact us</a>
+</section>
+	
+<!--------------------footer-------------->
+<section class="footer">
+	<h4>Connect With Us At</h4>
+	<div class="icons">
+	<i class="fa fa-facebook"></i>
+	<i class="fa fa-twitter"></i>
+	<i class="fa fa-instagram"></i>
+	<i class="fa fa-linkedin"></i>
+	</div>
+</section>
+<!----------------Java Script for Toggle Menu-------->
+<script>
+	var navLinks=document.getElementById("navLinks");
+	function showmenu(){
+	navLinks.style.right="0";
+} 
+	function hidemenu(){
+	navLinks.style.right="-200px";
+} 
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!Doctype html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width,
+	initial-scale=1.0">
+	<title>1st Web-Page</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="sub-header">
+	<nav>
+		<a href="index.html"><img src="logo.png"></a>
+		<div class="nav-links" id="navLinks">
+		<i class="fa fa-minus" onclick="hidemenu()"></i>
+		<ul>
+		<li><a href="index.html">home</a></li>		
+		<li><a href="course.html">course</a></li>
+		<li><a href="blog.html">blog</a></li>
+		<li><a href="#">about us</a></li>	
+		<li><a href="contact.html">contact us</a></li>	
+		</ul>
+		</div>
+	<i class="fa fa-bars" onclick="showmenu()"></i>
+	</nav>
+	<h1>About Us</h1>
+	</section>
+<!----------------------about us----->
+
+<section class="about-us">
+	<div class="row">
+	<div class="about-col">
+	<h1>We are the World's Largest School</h1>
+	<p>We are Reaching Excellence in Academics and Changing History! Together, we are champions of knowledge, 
+	our communities.We nuture the future and success of great minds.
+	The administration and staff are committed to providing a challenging and supportive learning environment
+	where all students can succeed and reach their full potential.
+	<br>
+	 we seek to develop well-rounded students who exemplify health, wellness and character development
+	using our core schoolwide expectations and values.
+	</p>
+	<a href="" class="btn red-btn">Explore Now</a>
+	</div>
+	<div class="about-col">
+	<img src="about.jpg">
+	</div>
+</section>
+	
+<!--------------------footer-------------->
+<section class="footer">
+	<h4>Connect With Us At</h4>
+	<div class="icons">
+	<i class="fa fa-facebook"></i>
+	<i class="fa fa-twitter"></i>
+	<i class="fa fa-instagram"></i>
+	<i class="fa fa-linkedin"></i>
+	</div>
+</section>
+<!----------------Java Script for Toggle Menu-------->
+<script>
+	var navLinks=document.getElementById("navLinks");
+	function showmenu(){
+	navLinks.style.right="0";
+} 
+	function hidemenu(){
+	navLinks.style.right="-200px";
+} 
+</script>
+</body>
+</html>
